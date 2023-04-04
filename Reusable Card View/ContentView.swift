@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Reusable Card View
 //
-//  Created by Chad on 4/4/23.
+//  Created by Di Nerd Apps on 4/4/23.
 //
 
 import SwiftUI
@@ -10,12 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+                    // Use the CardView with different system images and titles.
+                    CardView(systemImageName: "heart.fill", title: "Favorite")
+                    CardView(systemImageName: "star.fill", title: "Starred")
+                    CardView(systemImageName: "person.fill", title: "Profile")
+                }
     }
 }
 
